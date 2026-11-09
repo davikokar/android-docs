@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Easy Flashcards</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+            --border-color: #e9ecef;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border-color);
+        }
+
+        h1 {
+            color: var(--primary-color);
+            margin-top: 0;
+            font-size: 28px;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 12px;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 20px;
+            margin-top: 28px;
+            margin-bottom: 12px;
+        }
+
+        p, li {
+            font-size: 15px;
+            color: #555555;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .highlight-box {
+            background-color: #3498db10;
+            border-left: 4px solid var(--accent-color);
+            padding: 16px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            font-size: 13px;
+            color: #888888;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <p><strong>Last Updated:</strong> November 9, 2026</p>
+
+        <div class="highlight-box">
+            <p><strong>Key Summary:</strong> Easy Flashcards has <strong>no accounts</strong> and no analytics or advertising. Your decks and your study history stay on your device. The only time anything leaves it is when you <strong>deliberately</strong> browse or download community decks, share a deck with the community, or make an optional in-app purchase.</p>
+        </div>
+
+        <h2>1. Introduction</h2>
+        <p>This Privacy Policy explains how the application <strong>Easy Flashcards</strong> ("the App") handles your information. The App lets you import a deck of flashcards from a file on your device (or write one by hand), study it card by card, and see how well you know each card. We respect your privacy and are committed to protecting it.</p>
+
+        <h2>2. Data Collection and Usage</h2>
+        <p><strong>We do not collect your personal data.</strong></p>
+        <p>The App requires no account or sign-in, and it does not use third-party analytics, advertising, crash-reporting or tracking tools. Studying, editing, importing and exporting decks all work locally on your device. The only features that use the network are described in section 5.</p>
+
+        <h2>3. What the App Stores on Your Device</h2>
+        <p>To let you continue where you left off, the App saves the following in its own private storage area on your device:</p>
+        <ul>
+            <li><strong>Your decks:</strong> each deck's title, description, category and cards (question and answer text), together with how many times you answered each card correctly, so-so or incorrectly.</li>
+            <li><strong>Your study sessions:</strong> which cards were part of each session, your answers and when you gave them. This history is used to compute the statistics shown in the App.</li>
+            <li><strong>Your custom categories:</strong> the names, colours and icons you create.</li>
+            <li><strong>Your settings:</strong> such as the display language you select in the Settings screen.</li>
+            <li><strong>A random identifier (only if you share a deck):</strong> the first time you share a deck with the community, the App generates a random secret identifier and stores it on your device. It is not linked to your name, email, device or any account, and it only serves to prove later that you are the one who published that deck, so that you can update it. See section 5.</li>
+        </ul>
+        <p>This data is excluded from Android's automatic cloud backup, and is not readable by other apps. Uninstalling the App or clearing its data permanently deletes it.</p>
+
+        <h2>4. Device Permissions and File Access</h2>
+        <p>The App does not request access to your contacts, location, camera, microphone, photos or calendar. In particular:</p>
+        <ul>
+            <li><strong>Importing a deck:</strong> the App opens the system file picker provided by Android. You select exactly which file to import, and the App reads only that file. It never browses or scans your storage.</li>
+            <li><strong>Exporting a deck:</strong> Android asks you where to save the file. The App writes only to the location you choose.</li>
+            <li><strong>Network:</strong> the App uses the internet connection for the features described in section 5, and may check whether a connection is available.</li>
+            <li><strong>In-app purchases:</strong> the optional tip uses Google Play Billing, which is handled by Google Play.</li>
+        </ul>
+
+        <h2>5. Network Access and Third-Party Services</h2>
+        <p>The App contacts the internet only in the following cases. Outside of them, it works completely offline.</p>
+
+        <p><strong>a) Browsing and downloading community decks.</strong> When you open the community decks screen, the App reads a public GitHub repository of shared decks, anonymously, to list them and to download the ones you choose. No identifier, account or deck of yours is sent. As with any web request, GitHub receives technical information such as your IP address and the time of the request, and handles it under its own privacy statement.</p>
+
+        <p><strong>b) Sharing a deck with the community.</strong> Sharing is always your explicit choice and is preceded by a confirmation. When you confirm, the App sends the deck's <strong>title, description, category and card text</strong>, a random deck identifier and your random secret identifier to a small service operated by the developer on Cloudflare. The service checks the deck and publishes it to the public community repository on GitHub. Please note:</p>
+        <ul>
+            <li><strong>Everything you share becomes public</strong>, readable by anyone, and remains in the repository's history even if the deck is later changed or removed.</li>
+            <li>Your secret identifier is <strong>never published</strong>. Only a one-way cryptographic hash of it is stored next to the deck, so that only your device can update that deck later. Because the identifier is not tied to anything else about you, if you clear the App's data or change phone you lose the ability to update decks you shared earlier.</li>
+            <li>Decks you did not share are never sent anywhere, and your study history and statistics are never sent.</li>
+            <li>The hosting providers (Cloudflare and GitHub) may process technical information such as IP addresses in the course of delivering their services, under their own privacy policies. The developer does not use this information to identify you.</li>
+            <li>Do not put personal or confidential information in a deck you intend to share.</li>
+        </ul>
+
+        <p><strong>c) Optional tip.</strong> If you choose to buy the developer a coffee, the purchase is processed entirely by Google Play. The developer does not receive your payment details; at most, Google informs the developer of the sale under Google's own terms and privacy policy.</p>
+
+        <p><strong>d) Links you open.</strong> The Settings screen can open the Google Play listing, this Privacy Policy and the Terms and Conditions, or start an email to the developer's support address in your browser or email app. Those apps and sites apply their own privacy policies. If you write to support, we receive your email address and the content of your message, and use them only to answer you.</p>
+
+        <h2>6. Sharing Your Information</h2>
+        <p>We do not sell, rent or trade information, and we have no advertising partners. Apart from the community sharing described in section 5, nothing is transmitted from your device unless you choose to export a deck or use another app's share function.</p>
+
+        <h2>7. Children's Privacy</h2>
+        <p>The App does not knowingly collect any information from anyone, including children. Because there are no accounts and no personal data is collected, no profile of any user is created. Parents and guardians should be aware that community decks are written by other people and are not reviewed in advance.</p>
+
+        <h2>8. Data Retention and Deletion</h2>
+        <p>Because the App does not store your data on a server, there is no account to delete. You can delete any deck, category or session history from inside the App at any time. Uninstalling the App permanently removes everything it stores on your device, including its random identifier.</p>
+        <p>Decks you shared are stored in the public community repository and cannot be removed from inside the App. If you want a deck you published removed, contact us at the address below and include the deck's title.</p>
+
+        <h2>9. Your Rights</h2>
+        <p>Because the App holds no personal data about you on our side, there is generally nothing for us to access, correct or erase. If you are in a region with data protection rights (such as the EU or UK) and believe we hold information about you, for instance in an email you sent us or in a deck you shared, you may contact us to ask for access, correction or deletion.</p>
+
+        <h2>10. Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. The revised version will be published with a new "Last Updated" date.</p>
+
+        <h2>11. Contact Us</h2>
+        <p>If you have any questions or concerns regarding this Privacy Policy, or to request the removal of a shared deck, you can contact the developer at <a href="mailto:davidemela.support@gmail.com">davidemela.support@gmail.com</a>.</p>
+
+        <div class="footer">
+            &copy; 2026 Easy Flashcards. All rights reserved.
+        </div>
+    </div>
+</body>
+</html>
