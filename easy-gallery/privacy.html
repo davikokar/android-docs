@@ -82,35 +82,63 @@
 <body>
     <div class="container">
         <h1>Privacy Policy</h1>
-        <p><strong>Last Updated:</strong> August 8, 2026</p>
+        <p><strong>Last Updated:</strong> November 12, 2026</p>
 
         <div class="highlight-box">
-            <p><strong>Key Summary:</strong> Easy Gallery is a completely <strong>offline</strong> application. It does not collect, store, transmit, or share any personal data or media files with external servers or third parties.</p>
+            <p><strong>Key Summary:</strong> Easy Gallery works on your device. It has no account, no analytics, no advertising and no servers of its own. Your photos, videos, and the location and date information read from them are never collected, transmitted, or shared by the App. The only network-connected feature is the optional tip jar, which is handled by Google Play.</p>
         </div>
 
         <h2>1. Introduction</h2>
         <p>This Privacy Policy outlines how the application <strong>Easy Gallery</strong> ("the App") handles user information and device permissions. We strictly respect user privacy and are committed to protecting it.</p>
 
         <h2>2. Data Collection and Usage</h2>
-        <p><strong>No personal data is collected or transmitted.</strong></p>
-        <p>The App operates entirely locally on your mobile device. We do not operate remote servers or cloud databases, nor do we utilize third-party analytics or tracking tools.</p>
+        <p><strong>The developer does not collect or receive any personal data.</strong></p>
+        <p>The App reads and organizes the photos and videos already stored on your device. It does not copy your media, and it does not upload it anywhere. We do not operate remote servers or cloud databases, and we do not use third-party analytics, advertising, or tracking tools.</p>
 
         <h2>3. Device Permissions and Filesystem Access</h2>
-        <p>To deliver its core functionality as a photo gallery app, the App requests permission to access your device storage/photo library. Specifically:</p>
+        <p>To deliver its core functionality as a photo and video gallery, the App requests the following permissions:</p>
         <ul>
-            <li><strong>Reading Media Files:</strong> Required to scan and display photos and images stored on your device.</li>
-            <li><strong>Managing Files and Folders:</strong> Required to allow you to create new folders and organize your photos.</li>
-            <li><strong>Deleting Files:</strong> Required exclusively when you manually select and initiate a command to delete one or more photos.</li>
+            <li><strong>Reading photos and videos:</strong> Required to find, display, and play the images and videos stored on your device.</li>
+            <li><strong>Access to photo location metadata:</strong> Required to read the GPS coordinates that your camera may have embedded in a photo, so the App can show where it was taken and let you search and group by place. Without this permission the App stores no location information.</li>
+            <li><strong>Managing and deleting media:</strong> Required to let you create folders, move files, and delete photos or videos. Android may ask you to confirm these actions. A related media-management permission lets the App apply changes you have requested without asking again for each individual file. The App only does this when you start the action.</li>
+            <li><strong>Billing:</strong> Required for the optional tip jar (see section 6).</li>
         </ul>
-        <p>All actions listed above are executed locally on the user's device and under direct user control.</p>
+        <p>All actions listed above are executed locally on your device and under your direct control.</p>
 
-        <h2>4. Third-Party SDKs and Services</h2>
-        <p>The App does not integrate any third-party SDKs for advertising, user profiling, behavioral analytics, or tracking (e.g., no Google Analytics, AdMob, Facebook SDK, etc.).</p>
+        <h2>4. Information the App Stores on Your Device</h2>
+        <p>The App keeps small databases and settings files in its private storage on your device. They contain:</p>
+        <ul>
+            <li><strong>Albums and favourites:</strong> The albums you create, and references to the media you have placed in them, together with your choices such as sort order, grouping, pinned or hidden folders, and folder thumbnails. Albums hold references to your media, not copies of it. Favourites are stored by Android itself.</li>
+            <li><strong>A media index:</strong> A background task reads each photo or video's metadata and stores the capture date, file identifiers, GPS coordinates (if present), and the place name derived from them. This lets the App sort, group, filter, and search quickly. The index can be rebuilt from your device at any time. It also stores the outcome of the last indexing run, such as when it ran and how many items it processed.</li>
+            <li><strong>Language and display preferences.</strong></li>
+        </ul>
+        <p>None of this information is sent to the developer or to any third party by the App.</p>
 
-        <h2>5. Data Retention and Deletion</h2>
-        <p>Because the App does not store user data on remote servers, there is no remote account deletion required. Uninstalling the application from your device will permanently remove any locally stored preferences or settings.</p>
+        <h2>5. Place Names and Location Data</h2>
+        <p>Place names are worked out entirely on your device. The App contains a place-name dataset bundled inside the app package, derived from <a href="https://www.geonames.org/">GeoNames</a> and licensed under CC BY 4.0. Your coordinates are matched against this dataset locally. They are never sent to a geocoding service or any other server.</p>
+        <p>If you choose "show on map" for a photo, the App hands the location to a maps application installed on your device, or opens a maps website in your browser if no such app is available. At that point the maps app or website handles your data under its own privacy policy.</p>
+        <p>If you share a photo or video with another app, Android's share sheet sends the file to the app you choose. Photos may contain embedded location metadata, and what happens to it afterwards is governed by that app's policies.</p>
 
-        <h2>6. Contact Us</h2>
+        <h2>6. Third-Party Services: Google Play</h2>
+        <p>The App does not include any advertising, analytics, user-profiling, or tracking SDKs (no Google Analytics, AdMob, Facebook SDK, etc.).</p>
+        <p>The only third-party component that communicates over the network is the <strong>Google Play Billing</strong> library, used for the optional tip jar in Settings. When you choose to leave a tip, the purchase is processed by Google Play under Google's terms and <a href="https://policies.google.com/privacy">privacy policy</a>. The App receives only the information needed to confirm the purchase. It does not receive or store your payment details or personal information.</p>
+
+        <h2>7. Backup, Data Retention and Deletion</h2>
+        <p>Because the developer does not hold any of your data, there is no account to delete on our side.</p>
+        <ul>
+            <li>Your albums and preferences may be included in Android's device backup (for example, Google's backup to your Google Account) if you have backup enabled on your device. This is controlled by your device settings, not by us, and is subject to Google's privacy policy. It allows your albums to be restored if you change device.</li>
+            <li>The media index (dates, coordinates, and place names) is excluded from backup. It is rebuilt on the new device.</li>
+            <li>Uninstalling the App removes its locally stored data from your device. Copies held in an Android backup are managed through your Google Account.</li>
+            <li>The App never deletes your media except when you explicitly ask it to.</li>
+        </ul>
+
+        <h2>8. Children's Privacy</h2>
+        <p>The App does not collect personal information from anyone, including children.</p>
+
+        <h2>9. Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. The "Last Updated" date above shows when it last changed.</p>
+
+        <h2>10. Contact Us</h2>
         <p>If you have any questions or concerns regarding this Privacy Policy, you can contact the developer via the email address listed on the app's store page.</p>
 
         <div class="footer">
